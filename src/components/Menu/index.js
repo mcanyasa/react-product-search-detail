@@ -20,9 +20,9 @@ export default function BasicRouterExample() {
 	   
 		<nav className="navbar navbar-expand-lg navbar-light">
                     
-            <Link to="/">
-			   <img width="50px" src={brandLogo} alt="Webpack Logo" />
-			</Link>
+          {/*   <Link to="/">
+			   <img width="205px" src={brandLogo} alt="Webpack Logo" />
+			</Link> */}
 					
              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
              <span className="navbar-toggler-icon"></span>
@@ -31,6 +31,7 @@ export default function BasicRouterExample() {
              <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 	  	  
 	            <div className="navbar-nav">
+              <Link to="/" className="nav-item nav-link">Home</Link>
                        
 					 {/*   <Link to="/" className="nav-item nav-link">Home</Link>
                        <Link to="/about" className="nav-item nav-link">About this App</Link> */}
@@ -61,10 +62,6 @@ export default function BasicRouterExample() {
           <Route exact path="/product/:id">
             <ProductDetail />
           </Route>
-		  
-		   {/* <Route path="/editpost/:id">
-            <EditPost />
-          </Route> */}
 
 		  <Route path="*" component={Error} />
 		  

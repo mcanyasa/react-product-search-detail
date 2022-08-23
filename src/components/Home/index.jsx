@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-/* import reactLogo from 'images/react.png'; */
+import Search from 'components/Search/';
+import ProductList from 'components/ProductList/';
+
 
 
 class Home extends React.Component { 
    render() {
+
       return (
          <div>
            
-		   <h2>Welcome  </h2>
+		   <Search />
+         <ProductList />
 		   
 		   <br />
 
