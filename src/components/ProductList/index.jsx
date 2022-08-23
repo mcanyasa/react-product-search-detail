@@ -21,7 +21,7 @@ function ProductList () {
                         return (
                            
                            <div key={key} style={{border: "1px solid #6c757d"}}  className="card mr-2 mb-4">
-                             <img style={{height: 250 + "px"}} className="card-img-top" src={item.imgUrl} alt="Card image cap" />
+                             <img style={{height: 300 + "px"}} className="card-img-top" src={item.imgUrl} alt="Card image cap" />
                              <div className="card-body">
                                <h5 className="card-title">{item.name}</h5>
                                <p className="card-text">{item.prewText}</p>
