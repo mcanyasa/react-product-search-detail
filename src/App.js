@@ -38,7 +38,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>Defacto Filter</h1>
+        <h1>Defacto</h1>
         <SearchBox 
           placeholder="Find Your Product"
           onSearchChange={this.onSearchChange}
